@@ -47,14 +47,6 @@ public class Hooks extends Base {
 			chromeOption.setHeadless(false);
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOption);
-			  boolean useExtension = false; // Set this based on your requirement
-		        if (useExtension) {
-		            String extensionPath = "C:\\chromeCrx\\5.9.0_0.crx";
-		            chromeOption.addExtensions(new File(extensionPath));
-		        }
-			
-			
-			
 			driver.manage().window().maximize();
 			break;
 		case "firefox":
